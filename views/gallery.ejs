@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <%- include('partials/head', {titre: 'Gallery'})  %>
+</head>
+
+<body>
+
+    <%- include('partials/header', {titre: 'Gallery'})  %>
+
+    <main>
+
+        <section class="about-header text-center">
+            <div class="section-overlay"></div>
+
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-12 col-12">
+                        <h1 class="text-white">Gallerie</h1>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section section-padding" id="section_6">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-6 mb-4">
+                        <img src="/images/photo2.jpg"
+                            class="img-fluid rounded shadow-sm" 
+                            alt="Image 1"
+                            data-bs-toggle="modal" 
+                            data-bs-target="#imageModal"
+                            style="object-fit: cover; height: 180px; width: 100%;"
+                            onclick="showPreview(this)">
+                    </div>
+                    <div class="col-lg-3 col-6 mb-4">
+                        <img src="/images/photo5.jpg"
+                            class="img-fluid rounded shadow-sm" 
+                            alt="Image 1"
+                            data-bs-toggle="modal" 
+                            data-bs-target="#imageModal"
+                            style="object-fit: cover; height: 180px; width: 100%;"
+                            onclick="showPreview(this)">
+                    </div>
+                    <div class="col-lg-3 col-6 mb-4">
+                        <img src="/images/team.jpg"
+                            class="img-fluid rounded shadow-sm" 
+                            alt="Image 1"
+                            data-bs-toggle="modal" 
+                            data-bs-target="#imageModal"
+                            style="object-fit: cover; height: 180px; width: 100%;"
+                            onclick="showPreview(this)">
+                    </div>
+                    <div class="col-lg-3 col-6 mb-4">
+                        <img src="/images/team2.jpg"
+                            class="img-fluid rounded shadow-sm" 
+                            alt="Image 1"
+                            data-bs-toggle="modal" 
+                            data-bs-target="#imageModal"
+                            style="object-fit: cover; height: 180px; width: 100%;"
+                            onclick="showPreview(this)">
+                    </div>
+                    <div class="col-lg-3 col-6 mb-4">
+                        <img src="/images/slide/cover_alim.jpg"
+                            class="img-fluid rounded shadow-sm" 
+                            alt="Image 1"
+                            data-bs-toggle="modal" 
+                            data-bs-target="#imageModal"
+                            style="object-fit: cover; height: 180px; width: 100%;"
+                            onclick="showPreview(this)">
+                    </div>
+                    <div class="col-lg-3 col-6 mb-4">
+                        <img src="/images/slide/cover_droit.jpg"
+                            class="img-fluid rounded shadow-sm" 
+                            alt="Image 1"
+                            data-bs-toggle="modal" 
+                            data-bs-target="#imageModal"
+                            style="object-fit: cover; height: 180px; width: 100%;"
+                            onclick="showPreview(this)">
+                    </div>
+                    <div class="col-lg-3 col-6 mb-4">
+                        <img src="/images/slide/cover_env.jpg"
+                            class="img-fluid rounded shadow-sm" 
+                            alt="Image 1"
+                            data-bs-toggle="modal" 
+                            data-bs-target="#imageModal"
+                            style="object-fit: cover; height: 180px; width: 100%;"
+                            onclick="showPreview(this)">
+                    </div>
+                    <div class="col-lg-3 col-6 mb-4">
+                        <img src="/images/slide/cover_paix.jpg"
+                            class="img-fluid rounded shadow-sm" 
+                            alt="Image 1"
+                            data-bs-toggle="modal" 
+                            data-bs-target="#imageModal"
+                            style="object-fit: cover; height: 180px; width: 100%;"
+                            onclick="showPreview(this)">
+                    </div>
+                    <div class="col-lg-3 col-6 mb-4">
+                        <img src="/images/slide/cover_dev.jpg"
+                            class="img-fluid rounded shadow-sm" 
+                            alt="Image 1"
+                            data-bs-toggle="modal" 
+                            data-bs-target="#imageModal"
+                            style="object-fit: cover; height: 180px; width: 100%;"
+                            onclick="showPreview(this)">
+                    </div>
+                    
+
+                </div>
+            </div>
+        </section>
+
+        <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-dark text-white border-0">
+                    <div class="modal-body p-0 position-relative">
+                        <img id="modalImage" src="" class="w-100 rounded" style="object-fit: contain; height: 600px; width: 100%;">
+                        <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <%- include('partials/footer')  %>
+
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <%- include('partials/head', {titre: 'Contacts'})  %>
+</head>
+
+<body>
+
+    <%- include('partials/header', {titre: 'Contacts'})  %>
+
+    <main>
+
+        <section class="about-header text-center">
+            <div class="section-overlay"></div>
+
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-12 col-12">
+                        <h1 class="text-white">Contacts</h1>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section section-padding" id="section_6">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-12 ms-auto mb-5 mb-lg-0">
+                        <div class="contact-info-wrap">
+                            <h2>Contactez-nous</h2>
+
+
+                            <div class="contact-info">
+                                <h5 class="mb-3">Nos coordonnées</h5>
+
+                                <p class="d-flex mb-2">
+                                    <i class="bi-geo-alt me-2"></i>
+                                    12, Av. Maniema, Q/ Ndendere, Bukavu, RDC
+                                </p>
+
+                                <p class="d-flex mb-2">
+                                    <i class="bi-telephone me-2"></i>
+
+                                    <a href="tel:+243997125976" style="margin-right: 10px;">
+                                        +243 997 125 976
+                                    </a> |
+                                    <a href="tel:+243997125976" style="margin-left: 10px;">
+                                        +243 818 792 811
+                                    </a>
+                                </p>
+
+                                <p class="d-flex">
+                                    <i class="bi-envelope me-2"></i>
+
+                                    <a href="mailto:info@aed-rdc.org">
+                                        info@aed-rdc.org
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-12 mx-auto">
+                        <form class="custom-form contact-form" action="#" method="post" role="form">
+                            <h2>Envoyer un mail</h2>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <input type="text" name="first-name" id="first-name" class="form-control"
+                                        placeholder="Nom" required>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <input type="text" name="last-name" id="last-name" class="form-control"
+                                        placeholder="Prénom" required>
+                                </div>
+                            </div>
+
+                            <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control"
+                                placeholder="Adresse mail" required>
+
+                            <textarea name="message" rows="5" class="form-control" id="message"
+                                placeholder="Message"></textarea>
+
+                            <button type="submit" class="form-control">Envoyer</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <%- include('partials/footer')  %>
+
+</body>
+
+</html>
