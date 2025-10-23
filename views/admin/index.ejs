@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AED - Rédaction</title>
+    <link rel='stylesheet' href='/css/style-admin.css' />
+  </head>
+  <body>
+    <%- include('partials/header') %>
+    <form id="blogForm">
+      <label>Image de couverture</label>
+      <input type="file" name="couverture" class="img-picker">
+  
+      <label for="title">Titre de l'article</label>
+      <input type="text" id="title" name="title" placeholder="Titre de ton article" required>
+  
+      <label for="intro">Introduction</label>
+      <textarea id="intro" name="intro" rows="4" placeholder="Courte introduction de l'article..." required></textarea>
+  
+      <label>Premier block</label>
+      <div class="toolbar">
+        <button type="button" onclick="format('bold')"><b>G</b></button>
+        <button type="button" onclick="format('italic')"><i>I</i></button>
+        <button type="button" onclick="format('underline')"><u>S</u></button>
+        <button type="button" onclick="format('strikeThrough')"><s>T</s></button>
+        <button type="button" onclick="format('insertUnorderedList')">• Liste</button>
+        <button type="button" onclick="format('insertOrderedList')">1. Liste</button>
+        <button type="button" onclick="format('formatBlock','<h2>')">Titre</button>
+        <button type="button" onclick="format('formatBlock','<blockquote>')">❝ Citation</button>
+        <button type="button" onclick="format('createLink', prompt('Lien URL :'))">🔗 Lien</button>
+        <!-- <button type="button" onclick="format('removeFormat')">🧹 Effacer</button>
+        <button type="button" onclick="format('justifyLeft')">⬅️</button>
+        <button type="button" onclick="format('justifyCenter')">↔️</button>
+        <button type="button" onclick="format('justifyRight')">➡️</button> -->
+      </div>
+  
+      <div id="firstBlock" class="editor" contenteditable="true" placeholder="Écris ton article ici..."></div>
+
+      <label>Illustration</label>
+      <input type="file" name="couverture" class="img-picker">
+      
+      <label>Second block</label>
+      <div class="toolbar">
+        <button type="button" onclick="format('bold')"><b>G</b></button>
+        <button type="button" onclick="format('italic')"><i>I</i></button>
+        <button type="button" onclick="format('underline')"><u>S</u></button>
+        <button type="button" onclick="format('strikeThrough')"><s>T</s></button>
+        <button type="button" onclick="format('insertUnorderedList')">• Liste</button>
+        <button type="button" onclick="format('insertOrderedList')">1. Liste</button>
+        <button type="button" onclick="format('formatBlock','<h2>')">Titre</button>
+        <button type="button" onclick="format('formatBlock','<blockquote>')">❝ Citation</button>
+        <button type="button" onclick="format('createLink', prompt('Lien URL :'))">🔗 Lien</button>
+        <!-- <button type="button" onclick="format('removeFormat')">🧹 Effacer</button> -->
+        <!-- <button type="button" onclick="format('justifyLeft')">⬅️</button>
+        <button type="button" onclick="format('justifyCenter')">↔️</button>
+        <button type="button" onclick="format('justifyRight')">➡️</button> -->
+      </div>
+  
+      <div id="secondBlock" class="editor" contenteditable="true" placeholder="Écris ton article ici..."></div>
+
+      <label>Autres Illustrations</label>
+      <input type="file" name="couverture" class="img-picker" multiple>
+
+      <br>
+  
+      <button type="submit">Soumettre l'article</button>
+    </form>
+  
+    <script src="/js/main.js"></script>
+  </body>
+</html>
